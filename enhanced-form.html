@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Form</title>
+</head>
+<body>
+    <section>
+        <dl>
+            <dt>Description</dt>
+            <dd>this form collects user information including first name, last name , email and age</dd>
+            <dt>fields</dt>
+            <dd>
+                <ul>
+                    <li>first name: text input, required</li>
+                    <li>last name: text input, required</li>
+                    <li>email: email input, required</li>
+                    <li>age: numeric input, optional with minimum value of 0</li>
+                </ul>
+            </dd>
+        </dl>
+    </section>
+    <section>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                    <th>Required</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>first name</td>
+                    <td>text</td>
+                    <td>yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>last name</td>
+                    <td>text</td>
+                    <td>yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>email</td>
+                    <td>yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>number</td>
+                    <td>no</td>
+                    <td>minimum value of 0</td>
+                </tr>
+            </tbody>
+    </section>
+    <section>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    
+</body>
+</html>
